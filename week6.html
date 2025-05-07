@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Playground</title>
+    <link rel="stylesheet" href="week6.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Playground 🎪</h1>
+        <p>Explore interactive elements and event handling</p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section class="card">
+            <h2>Event Handling 🎈</h2>
+            
+            <div class="event-box" id="click-box">
+                <p>Click me!</p>
+            </div>
+            
+            <div class="event-box" id="hover-box">
+                <p>Hover over me!</p>
+            </div>
+            
+            <div class="event-box" id="keypress-box">
+                <p>Press any key while focused</p>
+                <input type="text" placeholder="Type here...">
+            </div>
+            
+            <div class="event-box" id="secret-box">
+                <p>Double click or long press me!</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section class="card">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <button id="color-changer">Change My Color</button>
+            
+            <div class="gallery">
+                <div class="gallery-controls">
+                    <button id="prev-btn">← Previous</button>
+                    <button id="next-btn">Next →</button>
+                </div>
+                <div class="slide active">
+                    <img src="https://via.placeholder.com/400x300?text=Slide+1" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/400x300?text=Slide+2" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/400x300?text=Slide+3" alt="Slide 3">
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div class="tab-content active" id="tab1">
+                    <h3>Content for Tab 1</h3>
+                    <p>This is the first tab's content.</p>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <h3>Content for Tab 2</h3>
+                    <p>Here's some content for the second tab.</p>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <h3>Content for Tab 3</h3>
+                    <p>Final tab content goes here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section class="card">
+            <h2>Form Validation 📋</h2>
+            
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars)</label>
+                    <input type="password" id="password" minlength="8">
+                    <span class="error-message"></span>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with ❤️ and JavaScript</p>
+    </footer>
+
+    <script src="week6.js"></script>
+</body>
+</html>
